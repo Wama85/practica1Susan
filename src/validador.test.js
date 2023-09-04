@@ -16,5 +16,9 @@ describe("VALIDAR EL CAMPO", () => {
     const dato='Un veloz múrcielago paseaba por las';
     expect(validarlongitud(dato)).toEqual(true);
   });
+  it("Titulo tiene mas de 50 caracteres", () => {
+    const dato='Un veloz múrcielago paseaba por las colinas en la noche';
+    expect(validarlongitud(dato)).toEqual(false);
+  });
 
 });
