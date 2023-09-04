@@ -1,4 +1,4 @@
-import {validarcampo,validarlongitud} from "./validar.js";
+import {validarcampo,validarlongitud,validarlongituddetalle} from "./validar.js";
 
 describe("VALIDAR EL CAMPO", () => {
 
@@ -19,6 +19,10 @@ describe("VALIDAR EL CAMPO", () => {
   it("Titulo tiene mas de 50 caracteres", () => {
     const dato='Un veloz múrcielago paseaba por las colinas en la noche';
     expect(validarlongitud(dato)).toEqual(false);
+  });
+  it("Contenido tiene que se menos de 150 caracteres", () => {
+    const dato='Un veloz múrcielago paseaba por las colinas en la noche';
+    expect(validarlongituddetalle(dato)).toEqual(true);
   });
 
 });

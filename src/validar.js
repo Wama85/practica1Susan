@@ -13,4 +13,14 @@ function validarlongitud(dato){
   return false;
 }
 
-export  {validarcampo,validarlongitud};
+function validarlongituddetalle(dato){
+  var longitudtexto=dato.length;
+  if(longitudtexto<=150){
+    return true
+  }
+  return false;
+}
+
+
+
+export  {validarcampo,validarlongitud,validarlongituddetalle};
