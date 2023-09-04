@@ -1,4 +1,4 @@
-import validarcampo from "./validar";
+import {validarcampo,validarlongitud} from "./validar";
 
 const titulo = document.querySelector("#titulo");
 const contenido = document.querySelector("#detalle");
