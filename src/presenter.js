@@ -1,4 +1,4 @@
-import sumar from "./sumador";
+import sumar from "./validar";
 
 const titulo = document.querySelector("#titulo");
 const contenido = document.querySelector("#detalle");
