@@ -1,4 +1,4 @@
-import sumar from "./validar";
+import validarcampo from "./validar";
 
 const titulo = document.querySelector("#titulo");
 const contenido = document.querySelector("#detalle");
@@ -10,10 +10,18 @@ boton.addEventListener("click", (event) => {
 
   const titulopost=titulo.value;
   const contenidopost=contenido.value;
+  const mensajepost=validarcampo(titulopost);
 
   //div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
-  div.innerHTML=`<p>TITULO:${titulopost}</p>
-  <p>CONTENIDO:${contenidopost}</p>
-  
-  `;
+  if (mensajepost==false){
+    div.innerHTML=`<p>No puedes prublicar un mensaje sin título</p>
+    `;
+  }
+  else{
+    div.innerHTML=`<p>TITULO:${titulopost}</p>
+    <p>CONTENIDO:${contenidopost}</p>
+    
+    `;
+  }
+
 });

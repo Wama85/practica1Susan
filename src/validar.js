@@ -1,5 +1,6 @@
 function validarcampo(dato) {
 if (dato ===''){
+ 
   return false
 }
   return true;
